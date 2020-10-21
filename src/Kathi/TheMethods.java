@@ -91,5 +91,16 @@ public class TheMethods {
         }
     }
 
+    public static void fillAnd(){
+        int[] toFill = new int[10];
+        Scanner in = new Scanner(System.in);
+
+        for(int elements : toFill){
+            System.out.println("please, enter a number");
+            toFill[elements] += in.nextInt();
+        }
+
+    }
+
 
 }
