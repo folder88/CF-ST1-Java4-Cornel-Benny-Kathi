@@ -1,5 +1,4 @@
 package Kathi;
-import Kathi.TheMethods;
 
 /**
  * Write a program, that prints integers (whole numbers) from 1 to 100
@@ -8,7 +7,7 @@ import Kathi.TheMethods;
 public class BasicOne {
 
     public static void main(String[]args){
-        TheMethods one = new TheMethods();  // <-- call the class
+        TheMethods one = new TheMethods();  // <-- call the class with the methods
         one.loopOne();    // <--- call the function.
 
         /*
