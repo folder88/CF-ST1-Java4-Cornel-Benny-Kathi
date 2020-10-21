@@ -120,5 +120,23 @@ public class TheMethods {
         }
     }
 
+    public static void average(){
+        int[] durchschnitt = new int[4];
+        int sum = 0;
+        Scanner in = new Scanner(System.in);
+
+        for(int i = 0; i < durchschnitt.length; i++){
+            System.out.println("please, enter a number");
+            durchschnitt[i] += in.nextInt();
+        }
+
+        for (int value : durchschnitt) {
+            sum += value;
+        }
+
+        double average = sum/ durchschnitt.length;
+        System.out.println("the average is: " + average);
+    }
+
 
 }
