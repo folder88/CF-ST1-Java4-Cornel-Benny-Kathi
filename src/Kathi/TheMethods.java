@@ -3,6 +3,7 @@ package Kathi;
 import java.lang.System;
 import java.util.Arrays;
 import java.util.Scanner;
+import java.util.Collections;
 
 
 /**
@@ -47,9 +48,9 @@ public class TheMethods {
         int theSum = 0;
         Scanner in = new Scanner(System.in);
 
-        for(int elements : calcArray){
+        for(int i = 0; i < calcArray.length; i++){
             System.out.println("please, enter a number");
-            calcArray[elements] += in.nextInt();
+            calcArray[i] += in.nextInt();
             //theSum = theSum + calcArray[elements];
         }
 
@@ -91,7 +92,7 @@ public class TheMethods {
         }
     }
 
-    public static void fillAnd(){      // <--- for ArrayBasicOne
+    public static void fillAnd(){      // <--- for ArrayBasicOne class
         int[] toFill = new int[10];
         Scanner in = new Scanner(System.in);
 
@@ -103,7 +104,20 @@ public class TheMethods {
         for(int element : toFill){
             System.out.println(element);
         }
+    }
 
+    public static void rueckwerts(){   // <--- for Array class
+        int[] rew = new int[10];
+        Scanner in = new Scanner(System.in);
+
+        for(int i = 0; i < rew.length; i++){
+            System.out.println("please, enter a number");
+            rew[i] += in.nextInt();
+        }
+
+        for(int i = rew.length -1; i >= 0; i--){
+            System.out.println(rew[i]);
+        }
     }
 
 
