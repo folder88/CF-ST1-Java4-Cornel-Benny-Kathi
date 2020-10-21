@@ -61,7 +61,7 @@ public class TheMethods {
 
     }
 
-    public static void myProgram(){
+    public static void myProgram(){ // <--- for Advanced class
         /*
         Write a program that does following:
          */
@@ -78,14 +78,16 @@ public class TheMethods {
         //3. The program loops through the array and counts the number of found item(s)
         for(int value : myItems){
 
+            // 5. If one item is found - display the number of found items.
             if(enter == value){
                 gefunden = true;
-                System.out.println(" number " + enter + " is in the Array!" );
+                System.out.println("numbermatch: " + enter);
             }
         }
 
+        // 4. If nothing is found -  display “Nothing found”.
         if(!gefunden){
-            System.out.println(" number " + enter + " is not in the Array!" );
+            System.out.println("Nothing found" );
         }
     }
 
