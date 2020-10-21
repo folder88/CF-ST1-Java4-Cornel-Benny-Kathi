@@ -1,5 +1,10 @@
 package Kathi;
 
+/**
+ * Write a program that calculates the sum 1+2+3+…+n where n is a number entered
+ * by the user.
+ */
+
 public class IntermediateTwo {
 
     public static void main(String[]args){
