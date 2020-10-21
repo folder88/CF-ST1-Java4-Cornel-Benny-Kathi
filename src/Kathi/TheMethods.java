@@ -1,6 +1,9 @@
 package Kathi;
 
+import java.lang.System;
+import java.util.Arrays;
 import java.util.Scanner;
+
 
 /**
  * this class is only for the functions.
@@ -37,5 +40,24 @@ public class TheMethods {
             }
             System.out.println(i);
         }
+    }
+
+    public static void calculateSum(){  // <--- for IntermediateTwo class
+        int[] calcArray = new int[6];
+        int theSum = 0;
+        Scanner in = new Scanner(System.in);
+
+        for(int elements : calcArray){
+            System.out.println("please, enter a number");
+            calcArray[elements] += in.nextInt();
+            //theSum = theSum + calcArray[elements];
+        }
+
+        for (int value : calcArray){
+            theSum += value;
+        }
+
+        System.out.println("the sum of the inputs is: " + theSum);
+
     }
 }
