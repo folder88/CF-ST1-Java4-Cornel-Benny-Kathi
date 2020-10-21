@@ -13,7 +13,7 @@ public class ArrayBasicOne {
 
         /*
         you find the function in the class TheMethods.
-        start on line 45 and end on line 62.
+        start on line 94 and end on line 105.
         name of the function: calculateSum
          */
     }

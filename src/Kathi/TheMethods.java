@@ -91,15 +91,18 @@ public class TheMethods {
         }
     }
 
-    public static void fillAnd(){
+    public static void fillAnd(){      // <--- for ArrayBasicOne
         int[] toFill = new int[10];
         Scanner in = new Scanner(System.in);
 
-        for(int elements : toFill){
+        for(int i = 0; i < toFill.length; i++){
             System.out.println("please, enter a number");
-            toFill[elements] += in.nextInt();
+            toFill[i] += in.nextInt();
         }
 
+        for(int element : toFill){
+            System.out.println(element);
+        }
 
     }
 
