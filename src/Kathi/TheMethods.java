@@ -69,7 +69,7 @@ public class TheMethods {
 
         //1. Creates an array of 10 items and fills it with various numbers, for example: 3, 10, 42, 12, ....
         int[] myItems = {1, 2, 3, 4, 5, 6, 66, 65, 64, 63};
-        boolean gefunden = false;
+        boolean gefunden = true;
 
         //2. User can enter a number and ask to find it in the array
         Scanner in = new Scanner(System.in);
@@ -81,13 +81,13 @@ public class TheMethods {
 
             // 5. If one item is found - display the number of found items.
             if(enter == value){
-                gefunden = true;
+                gefunden = false;
                 System.out.println("numbermatch: " + enter);
             }
         }
 
         // 4. If nothing is found -  display “Nothing found”.
-        if(!gefunden){
+        if(gefunden){
             System.out.println("Nothing found" );
         }
     }
