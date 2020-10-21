@@ -3,6 +3,7 @@ package Kathi;
 import java.lang.System;
 import java.util.Arrays;
 import java.util.Scanner;
+import java.util.Collections;
 
 
 /**
@@ -47,14 +48,14 @@ public class TheMethods {
         int theSum = 0;
         Scanner in = new Scanner(System.in);
 
-        for(int elements : calcArray){
+        for(int i = 0; i < calcArray.length; i++){
             System.out.println("please, enter a number");
-            calcArray[elements] += in.nextInt();
+            calcArray[i] += in.nextInt();
             //theSum = theSum + calcArray[elements];
         }
 
-        for (int value : calcArray){
-            theSum += value;
+        for (int element : calcArray){
+            theSum += element;
         }
 
         System.out.println("the sum of the inputs is: " + theSum);
@@ -88,6 +89,34 @@ public class TheMethods {
         // 4. If nothing is found -  display “Nothing found”.
         if(!gefunden){
             System.out.println("Nothing found" );
+        }
+    }
+
+    public static void fillAnd(){      // <--- for ArrayBasicOne class
+        int[] toFill = new int[10];
+        Scanner in = new Scanner(System.in);
+
+        for(int i = 0; i < toFill.length; i++){
+            System.out.println("please, enter a number");
+            toFill[i] += in.nextInt();
+        }
+
+        for(int element : toFill){
+            System.out.println(element);
+        }
+    }
+
+    public static void rueckwerts(){   // <--- for Array class
+        int[] rew = new int[10];
+        Scanner in = new Scanner(System.in);
+
+        for(int i = 0; i < rew.length; i++){
+            System.out.println("please, enter a number");
+            rew[i] += in.nextInt();
+        }
+
+        for(int i = rew.length -1; i >= 0; i--){
+            System.out.println(rew[i]);
         }
     }
 
