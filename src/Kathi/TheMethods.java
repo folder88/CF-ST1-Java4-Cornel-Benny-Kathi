@@ -53,8 +53,8 @@ public class TheMethods {
             //theSum = theSum + calcArray[elements];
         }
 
-        for (int value : calcArray){
-            theSum += value;
+        for (int element : calcArray){
+            theSum += element;
         }
 
         System.out.println("the sum of the inputs is: " + theSum);
@@ -99,6 +99,7 @@ public class TheMethods {
             System.out.println("please, enter a number");
             toFill[elements] += in.nextInt();
         }
+
 
     }
 
