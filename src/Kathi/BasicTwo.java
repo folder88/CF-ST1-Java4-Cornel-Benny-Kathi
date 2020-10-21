@@ -1,5 +1,9 @@
 package Kathi;
 
+/**
+ *  Write a program that prints all even numbers between 2 and 100
+ */
+
 public class BasicTwo {
 
     public static void main(String[]args){
